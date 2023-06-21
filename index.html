@@ -2,14 +2,30 @@
 <html>
     <head>
         <title>Alexandre Leal</title>
-        <!--<link rel="stylesheet" href="style.css">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            @media (max-width:420px) {
+                #h1-1 {
+                font-size: 10px;
+                }
+                #h1-2 {
+                font-size: 65px;
+                }
+                p1 {
+                font-size: 30px;
+                }
+                p2 {
+                font-size: 30px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="container-fluid">
             <header class="row" style="position: fixed; top: 0; left: 0; right: 0;">
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg-6">
                     <nav class="navbar navbar-expand-lg fixed-top">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#">
@@ -34,7 +50,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#portfolio_section">Portfolio</a>
                                 </li>
-                                  <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#contact_section">Contact</a>
                                 </li>
                             </div>
@@ -47,23 +63,23 @@
                 <div class="col">
                     <div class="row my-5 py-5">
                         <div class="col">
-                            <h1 class="text-center" style="font-size: 50px;">
+                            <h1 class="text-center" id="h1-1" style="font-size: 50px;">
                                 Hello! I am
                             </h1><br>
-                            <h1 class="text-center" style="font-size: 70px;">
+                            <h1 class="text-center" id="h1-2" style="font-size: 70px;">
                                 Alexandre Leal.
                             </h1>
-                            <p class="mt-5 pt-5 mx-5" style="font-size: 30px;">
+                            <p class="mt-5 pt-5 mx-5" id="p1" style="font-size: 30px;">
                                 A Software Developer. Currently growing my skills on Client-side, focusing on Web Development. Also starting my next journey on mobile application using Flutter and Dart language.
                             </p>
-                            <p class="mx-5" style="font-size: 30px;">
+                            <p class="mx-5" id="p2" style="font-size: 30px;">
                                 Data Engineering is one of my passions. My experiences are on Database Structures and Management. Also, building data pipeline for ingestion and transformation.
                             </p>
                         </div>
                     </div>
-                    <div class="row mx-5 px-5" style="background-color: #d2d4c8;" id="skills_section">
+                    <div class="row mx-5 px-5 justify-content-center" style="background-color: #d2d4c8;" id="skills_section">
                         <h1 class="text-center mb-5">Skills</h1><br>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card" style="width: 15rem; background-color: #b8bdb5">
                                 <div class="card-body">
                                     <h1 class="card-title" style="font-size: 25px;">Hard Skills - SD</h1>
@@ -78,7 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card" style="width: 15rem; background-color: #b8bdb5">
                                 <div class="card-body">
                                     <h1 class="card-title" style="font-size: 25px;">Hard Skills - DE</h1>
@@ -93,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card" style="width: 15rem; background-color: #b8bdb5">
                                 <div class="card-body">
                                     <h1 class="card-title" style="font-size: 25px;">Soft Skills</h1>
@@ -111,61 +127,65 @@
                     </div>
                     <div class="row  justify-content-center text-center" style="background-color: #d2d4c8;"  id="portfolio_section">
                         <div class="col mt-5 pt-5">
-                            <h1>Take a look in one of my projects.</h1>
-                        </div>
-                    </div>
-                    <div class="row  justify-content-center text-center" style="background-color: #d2d4c8;">
-                        <div class="col">
-                            <h4>Maybe more...</h4>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center" style="background-color: #d2d4c8;">
-                        <div class="col-7 mt-3 mb-5 pb-5">
-                            <div id="carouselExampleCaptions" class="carousel slide">
-                                <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <div class="row">
+                                <div class="col">
+                                    <h1>Take a look in one of my projects.</h1>
                                 </div>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img src="Acer_Wallpaper_01_5000x2814.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>First slide label</h5>
-                                      <p>Some representative placeholder content for the first slide.</p>
-                                      <button class="btn btn-outline-light">See more</button>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="Acer_Wallpaper_02_5000x2813.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Second slide label</h5>
-                                      <p>Some representative placeholder content for the second slide.</p>
-                                      <button class="btn btn-outline-light">See more</button>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="Acer_Wallpaper_03_5000x2814.jpg" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                      <h5>Third slide label</h5>
-                                      <p>Some representative placeholder content for the third slide.</p>
-                                      <button class="btn btn-outline-light">See more</button>
-                                    </div>
-                                  </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Maybe more...</h4>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
-                                </button>
-                              </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-7 mt-3 mb-5 pb-5">
+                                    <div id="carouselExampleCaptions" class="carousel slide">
+                                        <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="Acer_Wallpaper_01_5000x2814.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                              <h5>First slide label</h5>
+                                              <p>Some representative placeholder content for the first slide.</p>
+                                              <button class="btn btn-outline-light">See more</button>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="Acer_Wallpaper_02_5000x2813.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                              <h5>Second slide label</h5>
+                                              <p>Some representative placeholder content for the second slide.</p>
+                                              <button class="btn btn-outline-light">See more</button>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="Acer_Wallpaper_03_5000x2814.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                              <h5>Third slide label</h5>
+                                              <p>Some representative placeholder content for the third slide.</p>
+                                              <button class="btn btn-outline-light">See more</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div>    
                     <div class="row justify-content-center" id="contact_section" style="background-color: #b8bdb5;">
-                        <div class="col-12 col-lg-6 mt-5 pt-5" style="font-size: 19px;">
+                        <div class="col-12 col-md-6 col-lg-6 mt-5 pt-5" style="font-size: 19px;">
                             <p>
                                 I'm open to new chelanges. <br>
                                 Feel free to contact me for colaboration in new projects. <br>
@@ -173,7 +193,7 @@
                                 Send me a message in one of my socials for more details.
                             </p>
                         </div>
-                        <div class="col-12 col-lg-6 mt-5 pt-5 mb-5 pb-5">
+                        <div class="col-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5 pb-5">
                             <a href="" style="color: black; text-decoration: none; font-size: 25px;">
                                 <i class="bi bi-google pr-2" style="font-size: 25px; color: red;"></i>
                                 dev.alexandreleal@gmail.com
@@ -191,7 +211,7 @@
                 </div>
             </main>
             <footer class="row justify-content-center text-center text-light" style="background-color: #889696;">
-                <div class="col-12 mt-5">
+                <div class="col mt-5">
                 <p>&copy;Alexandre Leal - 2023</p>
                 </div>
             </footer>
